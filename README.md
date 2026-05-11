@@ -9,7 +9,7 @@ for machine learning training and evaluation pipelines.
 
 This project builds aligned, versioned robotics datasets from raw robot video and sensor logs. The pipeline performs ingestion, cross-modal alignment, episode extraction, dataset validation, and health analysis to simulate the core data infrastructure used in robotics ML systems.
 
-----------
+---
 
 ## TL;DR
 
@@ -41,7 +41,7 @@ Parquet dataset layer + inspection + labeling
 
 The goal is to model the data infrastructure used in robotics and embodied AI training pipelines.
 
-----------
+---
 
 ## Example Dataset Outputs
 
@@ -160,7 +160,7 @@ Content hash manifest ensuring reproducible dataset artifacts.
 }
 ```
 
-----------
+---
 
 ## Key Features
 
@@ -171,7 +171,7 @@ Content hash manifest ensuring reproducible dataset artifacts.
 - Dataset health metrics and quality signals
 - Artifact fingerprinting for reproducibility
 
-----------
+---
 
 ## Table of Contents
 
@@ -192,7 +192,7 @@ Content hash manifest ensuring reproducible dataset artifacts.
 - [Usage Notice](#usage-notice)
 - [Author](#author)
 
-----------
+---
 
 ## Quick Demo
 
@@ -211,7 +211,7 @@ Example pipeline output:
 
 ![Pipeline Run](docs/images/pipeline_output.png)
 
-----------
+---
 
 ## Getting Started
 
@@ -256,7 +256,7 @@ python -m robotics_data_engine dataset-summary
 
 This will produce alignment artifacts, episode segmentation results, and dataset health metrics for the session.
 
-----------
+---
 
 ## Why This Project Exists
 
@@ -285,7 +285,7 @@ This project demonstrates a deterministic data engine that:
 
 The system is designed to mirror the structure of real-world robotics ML data platforms.
 
-----------
+---
 
 ## What This Project Is / Is Not
 
@@ -305,7 +305,7 @@ The system is designed to mirror the structure of real-world robotics ML data pl
 
 The focus is **dataset construction and validation infrastructure**.
 
-----------
+---
 
 ## System Architecture
 
@@ -344,7 +344,7 @@ Operational Commands
   ingest | align | validate | align-all | dataset-summary
 ```
 
-----------
+---
 
 ## Session Directory Contract
 
@@ -402,7 +402,7 @@ logs/
 
 This directory contract ensures datasets remain reproducible and auditable.
 
-----------
+---
 
 ## Pipeline Stages
 
@@ -544,7 +544,7 @@ Example CLI output:
 
 ![Dataset Summary](docs/images/dataset_summary.png)
 
-----------
+---
 
 ## Core Guarantees
 
@@ -566,7 +566,7 @@ These guarantees are enforced through:
 - explicit manifests
 - rebuildable derived artifacts
 
-----------
+---
 
 ## Data Guarantees
 
@@ -588,7 +588,7 @@ robotics_data_engine enforces several guarantees over constructed datasets.
   The system computes dataset health metrics (alignment error, missing data ratio, episode fragmentation) to make dataset quality measurable.
   Mechanism: automated dataset health metrics generated during pipeline execution.
 
-----------
+---
 
 ## Tech Stack
 
@@ -597,7 +597,7 @@ robotics_data_engine enforces several guarantees over constructed datasets.
 - JSON / CSV artifact pipelines
 - SHA-256 artifact fingerprinting
 
-----------
+---
 
 ## Extensions: Dataset Layer and Inspection Tooling
 
@@ -683,7 +683,7 @@ Parquet dataset → inspection → labeling → curated dataset
 This models how real-world robotics and ML systems incorporate
 human review into dataset development pipelines.
 
-----------
+---
 
 ## Future Extensions
 
@@ -697,7 +697,7 @@ Possible future extensions include:
 
 These extensions would simulate aspects of large-scale robotics data infrastructure.
 
-----------
+---
 
 ## Project Scope
 
@@ -710,7 +710,7 @@ It does not include:
 - distributed storage systems
 - production deployment infrastructure
 
-----------
+---
 
 ## Usage Notice
 
@@ -718,7 +718,7 @@ This repository is shared for portfolio and evaluation purposes.
 
 Please contact the author for permission before reusing or redistributing the code.
 
-----------
+---
 
 ## Author
 
